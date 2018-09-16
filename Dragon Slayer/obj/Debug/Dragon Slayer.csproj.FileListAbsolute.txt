@@ -1,0 +1,7 @@
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\bin\Debug\Dragon Slayer.exe.config
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\bin\Debug\Dragon Slayer.exe
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\bin\Debug\Dragon Slayer.pdb
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\obj\Debug\Dragon Slayer.csprojAssemblyReference.cache
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\obj\Debug\Dragon Slayer.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\obj\Debug\Dragon Slayer.exe
+C:\Users\Michael\Desktop\C#\Dragon Slayer\Dragon Slayer\obj\Debug\Dragon Slayer.pdb
