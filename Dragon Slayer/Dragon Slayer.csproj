@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Armor.cs" />
     <Compile Include="Armory.cs" />
-    <Compile Include="Battle.cs" />
+    <Compile Include="BattleText.cs" />
     <Compile Include="BattleSystem.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Inn.cs" />

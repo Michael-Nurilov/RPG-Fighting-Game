@@ -250,8 +250,8 @@ namespace Dragon_Slayer
         public bool armorChecker = true;
         public List<Item> Equipment = new List<Item>();
         public PlayerInventory playerInventory = new PlayerInventory();
-        public Sword Sword = new Sword(4, "Sword", 0, "A weapon which augments your attack", 1, 1);
-        public Armor Armor = new Armor(5, "Armor", 0, "A weapon which augments your defense", 1, 1);
+        public Sword Sword = new Sword(0, 1, 4, "Sword", 1, "A weapon which augments your attack");
+        public Armor Armor = new Armor(0, 1, 5, "Armor", 1, "A piece of equipment which augments your defense");
 
 
         //Progession indicator
@@ -282,8 +282,6 @@ namespace Dragon_Slayer
             Equipment.Add(Sword);
             Equipment.Add(Armor);
         }
-
-        
 
 
         //Displays the users stats
@@ -366,7 +364,7 @@ namespace Dragon_Slayer
         }
 
 
-        //Players attack
+        //Players attack and guard commands
         public int Attack(int hp, int defense)
         {
             int damage = attack - defense;

@@ -141,6 +141,8 @@ namespace Dragon_Slayer
         }
 
 
+
+        //Combat calculations 
         public int Attack(int hp, int defense)
         {
             int damage = attack - defense;
@@ -155,6 +157,7 @@ namespace Dragon_Slayer
             }
             return hp;
         }
+
         public int DamageDone(int defense)
         {
             int damage = attack - defense;
@@ -164,6 +167,7 @@ namespace Dragon_Slayer
             }
             return damage;
         }
+
         public int ChargeAttack(int hp, int defense)
         {
             int chargeAttack = 0;
@@ -181,6 +185,7 @@ namespace Dragon_Slayer
             }
             return hp;
         }
+
         public int ChargeDamage(int defense)
         {
             int chargeDamage = 0;
@@ -193,6 +198,7 @@ namespace Dragon_Slayer
             }
             return damage;
         }
+
         public int SpecialAttackInterruption(int defense)
         {
             int specialAttackInterruption = (int)(attack * chargeInterruptModifier) - defense;
@@ -203,6 +209,7 @@ namespace Dragon_Slayer
             }
             return specialAttackInterruption;
         }
+
         public int SpecialAttackGuarded(int attack)
         {
             int specialAttackGuarded;

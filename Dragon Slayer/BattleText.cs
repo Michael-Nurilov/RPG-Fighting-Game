@@ -122,7 +122,6 @@ namespace Dragon_Slayer
         //Displays the enemy attacking
         public static void EnemyAttack(Player _player, Enemy _enemy)
         {
-            _player.currentHealth -= _enemy.DamageDone(_player.defense);
             Console.Clear();
             Console.WriteLine("The {0} strikes {1} for {2} damage", _enemy.name, _player.name, _enemy.DamageDone(_player.defense));
             Console.WriteLine("{0}'s Health: {1}", _enemy.name, _enemy.health);

@@ -11,6 +11,7 @@ namespace Dragon_Slayer
         //Private fields
         private int _level;
         private int _attackValue;
+        private int _goldValue;
 
 
         //Public fields
@@ -66,14 +67,41 @@ namespace Dragon_Slayer
                 }
             }
         }
+        new public int goldValue
+        {
+            get
+            {
+                return _goldValue;
+            }
+            set
+            {
+                if (level == 0)
+                {
+                    _goldValue = 200;
+                }
+                else if (level == 1)
+                {
+                    _goldValue = 1000;
+                }
+                else if (level == 2)
+                {
+                    _goldValue = 2500;
+                }
+                else if (level == 3)
+                {
+                    _goldValue = 10000;
+                }
+            }
+        }
 
 
         //Constructor
-        public Sword(int _ID, string _name, int _goldValue, string _description, int _level, int _AttackValue) :
+        public Sword(int _level, int _attackValue, int _ID, string _name, int _goldValue, string _description) :
             base(_ID, _name, _goldValue, 1, _description)
         {
             level = _level;
-            attackValue = _AttackValue;
+            attackValue = _attackValue;
+            goldValue = 1;
         }
 
 

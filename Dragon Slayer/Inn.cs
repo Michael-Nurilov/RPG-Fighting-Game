@@ -14,7 +14,7 @@ namespace Dragon_Slayer
 
         //Greeting to the inn
         private static void InnGreeting()
-        {
+        { 
             Console.Clear();
             Console.WriteLine("Welcome to the inn would you like to heal your wounds?");
             Console.WriteLine("All it will cost is {0} gold", GOLD_COST);

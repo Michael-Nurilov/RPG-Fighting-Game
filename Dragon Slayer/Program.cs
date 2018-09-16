@@ -130,13 +130,13 @@ namespace Dragon_Slayer
                 {
                     if (Player.plainCleared == true && Player.riverCleared == true)
                     {
-                        BattleSystem.EnterBattle(Player, new Enemy("Bear", 700, 90, 50, 500, 1000, 3, 6, 20), "forest");
+                        BattleSystem.EnterBattle(Player, new Enemy("Bear", 700, 85, 50, 500, 1000, 3, 6, 20), "forest");
                     }
                     else if (Player.plainCleared == true)
                     {
                         Console.Clear();
                         Console.WriteLine("You have not yet traversed past the river");
-                        Console.ReadKey();
+                        Console.ReadKey(); 
                     }
                     else
                     {
@@ -152,7 +152,7 @@ namespace Dragon_Slayer
                 {
                     if (Player.plainCleared == true && Player.riverCleared == true && Player.forestCleared == true)
                     {
-                        BattleSystem.EnterBattle(Player, new Enemy("Troll", 1500, 230, 50, 1500, 5000, 5, 10, 15), "bridge");
+                        BattleSystem.EnterBattle(Player, new Enemy("Troll", 1500, 220, 50, 1500, 5000, 5, 10, 15), "bridge");
 
                     }
                     else if (Player.plainCleared == true && Player.riverCleared == true)
@@ -200,36 +200,42 @@ namespace Dragon_Slayer
                         //If the player chooses to proceed there is no going back
                         if (castleChoice == "1")
                         {
-                            BattleSystem.EnterBattle(Player, new Enemy("Golem", 3000, 350, 100, 3000, 1000, 3, 6, 15), "castle");
-
                             Console.Clear();
-                            Console.WriteLine("You decide to enter the castle and face the dragon");
-                            Console.ReadKey();
-                            Console.WriteLine("You enter the castle and come to the main hall when suddenly");
-                            Console.ReadKey();
-                            Console.WriteLine("A golem attacks!");
+                            Console.WriteLine("You decide to enter the castle to face the dragon");
                             Console.ReadKey();
 
-                            BattleSystem.EnterBattle(Player, new Enemy("Golem", 3000, 350, 100, 3000, 1000, 3, 6, 15), "castle");
 
-                            Console.Clear();
-                            Console.WriteLine("After defeating the golem you proceed further into the castle when suddenly");
-                            Console.ReadKey();
-                            Console.WriteLine("Another golem attacks!");
-                            Console.ReadKey();
+                            //Battle against first golem
+                            BattleSystem.EnterBattle(Player, new Enemy("Golem", 3000, 340, 100, 3000, 1000, 3, 6, 15), "main hall", 1, 1);
+
+                            if(Player.currentHealth <= 0)
+                            {
+                                break;
+                            }
+
+
+                            //Battle against second golem
+                            BattleSystem.EnterBattle(Player, new Enemy("Golem", 3000, 340, 100, 3000, 1000, 3, 6, 15), "staircase", 1, 1);
+
+                            if (Player.currentHealth <= 0)
+                            {
+                                break;
+                            }
 
 
                             Console.Clear();
                             Console.WriteLine("After defeating the second golem you are able to proceed through the castle");
                             Console.ReadKey();
                             Console.WriteLine("You climb the steps and reach the top of the castle where you hear the dragon");
-                            Console.ReadKey();
-                            Console.WriteLine("You lock eyes with the dragon");
-                            Console.ReadKey();
-                            Console.WriteLine("The dragon attacks!");
-                            Console.ReadKey();
 
-                            BattleSystem.EnterBattle(Player, new Enemy("Dragon", 7000, 430, 230, 0, 0, 4, 7, 15), "castle");
+
+                            //Battle against dragon
+                            BattleSystem.EnterBattle(Player, new Enemy("Dragon", 7000, 420, 220, 0, 0, 4, 7, 15), "balcony", 1, 1);
+
+                            if (Player.currentHealth <= 0)
+                            {
+                                break;
+                            }
                         }
 
 

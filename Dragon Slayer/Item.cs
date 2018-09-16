@@ -25,19 +25,5 @@ namespace Dragon_Slayer
             this.quantity = quantity;
             this.description = description;
         }
-
-
-        public void RemovefromBag(PlayerInventory _playerInventory, Item _item)
-        {
-            _item.quantity--;
-            if (_item.quantity <= 0)
-            {
-                _playerInventory.PlayerBag.Remove(_item);
-            }
-            else
-            {
-
-            }
-        }
     }
 }
