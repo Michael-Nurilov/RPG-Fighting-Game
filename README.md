@@ -1,4 +1,4 @@
-# RPG-Fighting-Game
+# Dragon-Slayer
 A text based game created to help develop my knowledge and ability to use C#.
 During the process of writing this code I learnt about how to utilize different concepts such as
 classes, inheritance, lists, public and private variables, parameters, and more.
