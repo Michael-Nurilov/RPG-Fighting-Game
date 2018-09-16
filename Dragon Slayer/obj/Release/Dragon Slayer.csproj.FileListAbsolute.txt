@@ -1,0 +1,6 @@
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\bin\Release\Dragon Slayer.exe.config
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\bin\Release\Dragon Slayer.exe
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\bin\Release\Dragon Slayer.pdb
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\obj\Release\Dragon Slayer.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\obj\Release\Dragon Slayer.exe
+C:\Users\Michael\Documents\GitHub\Dragon-Slayer\Dragon Slayer\obj\Release\Dragon Slayer.pdb
